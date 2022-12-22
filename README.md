@@ -6,7 +6,7 @@ This is an movies crud api
 
 ## External Library & Main Library
 - Main Library
-    1. fmt - 
+    1. fmt - to print / console details
     2. log - 
     3. encoding/json - sending data in json format
     4. math/rand - for creating random id 

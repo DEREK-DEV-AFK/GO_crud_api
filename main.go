@@ -67,6 +67,12 @@ func createMovie(w http.ResponseWriter, r *http.Request) {
 	var movie Movie
 	_ = json.NewDecoder(r.Body).Decode(&movie)
 	movie.ID = strconv.Itoa(rand.Intn(10000000000))
+	// checks to perform, inorder to avoid empty name
+	if len(movie.Isbn) == 0 || len(movie.Title) == 0 {
+		http.Error(w, "Invlaid input", http.StatusBadRequest)
+		return
+	}
+
 	movies = append(movies, movie)
 	json.NewEncoder(w).Encode(movie)
 }

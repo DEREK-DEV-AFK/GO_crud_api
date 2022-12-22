@@ -1,4 +1,4 @@
-# REST API
+# CRUD API
 This is an movies crud api
 - It does'nt uses any database, it uses struct and slices instead
 ## Top view of app

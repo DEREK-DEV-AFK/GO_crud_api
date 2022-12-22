@@ -2,6 +2,7 @@
 This is an movies crud api
 - It does'nt uses any database, it uses struct and slices instead
 ## Top view of app
+![projectIdea](readmeImages/routes.png "project idea")
 
 ## External Library & Main Library
 - Main Library

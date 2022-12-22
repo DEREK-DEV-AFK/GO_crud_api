@@ -7,7 +7,7 @@ This is an movies crud api
 ## External Library & Main Library
 - Main Library
     1. fmt - to print / console details
-    2. log - 
+    2. log - to logging error
     3. encoding/json - sending data in json format
     4. math/rand - for creating random id 
     5. net/http - creating server
@@ -25,7 +25,15 @@ This is an movies crud api
     ```
     go get -u github.com/gorilla/mux
     ```
-2. 
+2. Building, if not build before
+    ```
+    go build
+    ```
+3. Run the app
+    ```
+    go run main.go
+    ```
+4. Now the app is listen to port 8000, if there is no error
 
 ## Author
 Sufiyan
